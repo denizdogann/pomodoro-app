@@ -1,0 +1,44 @@
+*{
+    --pomodoro:rgb(243, 76, 25);
+    --short-break:rgb(66, 156, 7);
+    --long-break: rgb(0, 119, 255);
+}
+
+  .timer__main h1{
+    background-color: transparent;
+    font-size: 6rem;
+    padding: 20px 0;
+  }
+  .timer__main h1.pomodoro{
+    color: var(--pomodoro);
+  }
+  .timer__main h1.short-break{
+    color: var(--short-break);
+  }
+  .timer__main h1.long-break{
+    color: var(--long-break);
+  }
+
+  .timer__btn_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+    background-color: transparent;
+  }
+  .timer__btn_box button{
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width:3.3rem;
+    height:3.3rem;
+  }
+  .timer__btn_box.pomodoro button{
+    background-color: var(--pomodoro);
+  }
+  .timer__btn_box.short-break button{
+    background-color: var(--short-break);
+  }
+  .timer__btn_box.long-break button{
+    background-color: var(--long-break);
+  }

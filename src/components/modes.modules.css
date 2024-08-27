@@ -1,0 +1,32 @@
+*{
+    --pomodoro:rgb(243, 76, 25);
+    --short-break:rgb(66, 156, 7);
+    --long-break: rgb(0, 119, 255);
+}
+.modes-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+}
+.mode-button{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding:7px 11px;
+    font-size: 1.2rem;
+    border:0;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgba(172, 159, 159, 0.31);
+}
+.active{
+    color:white;
+}
+.active#pomodoro-btn{
+    background-color: var(--pomodoro);
+}
+.active#short-break-btn{
+    background-color:var(--short-break);
+}
+.active#long-break-btn{
+    background-color:var(--long-break);
+}
